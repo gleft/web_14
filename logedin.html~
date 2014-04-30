@@ -27,10 +27,6 @@ function initialize() {
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
 
-google.maps.event.addListener(map, 'click', function(e) {
-alert(e.latLng); 
-}); 
-
 
   // Try HTML5 geolocation
   if(navigator.geolocation) {

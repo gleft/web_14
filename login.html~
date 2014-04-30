@@ -10,5 +10,5 @@ Password: <input type="text" name="password" size="30">
 <p style="text-align:center"><input type="submit" value="Είσοδος"></p>
 </form>
 <li><a href="index.html">Αρχική</a></li>
-<li><a href="egkegr.html">dummylogin</a></li>
+<li><a href="logedin.html">dummylogin</a></li>
 </body>
