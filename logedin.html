@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<head>
+<title>Ο Δήμος Μας</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<div id="map_canvas" style="width:300px;height:300px;"></div>
+<script>
+var map;
+
+function initialize() {
+var mapOptions = {
+zoom: 8,
+center: new google.maps.LatLng(-34.397, 150.644),
+mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+
+google.maps.event.addListener(map, 'click', function(e) {
+alert(e.latLng); 
+}); 
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
