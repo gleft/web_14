@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<head>
+<style> body { background: url("http://mt.alinedesignstudios.com/wp-content/uploads/2014/01/minimalistic-gray_245349.jpg");}
+    </style>
+</head>
+<body>
+
+
+<h1>Αναφορά προς τον Δήμο σας</h1>
+
+<p>Επιλέξτε την κατηγορία αναφοράς που θα κάνετε:</p>
+<select>
+<option value ="Έλλειψη δραστηριοτήτων">Έλλειψη δραστηριοτήτων</option>
+<option value ="Ηχορύπανση">Ηχορύπανση</option>
+<option value ="Καθαριότητα">Καθαριότητα</option>
+<option value ="Δρόμοι">Δρόμοι</option>
+<option value ="Έλειψη φύλαξης" selected>Έλειψη φύλαξης</option>
+<option value ="Έλειψη καταστημάτων">Έλειψη καταστημάτων</option>
+<option value ="Μέσα μαζικής μεταφοράς">Μέσα μαζικής μεταφοράς</option>
+</select>
+
+<br /><br /><br />
+<br /><br />
+
+<form action="/html/tags/html_form_tag_action.cfm" method="post">
+Σχόλια σχετικά με την αναφορά σας:<br /><br />
+
+<textarea name="Σχόλια" id="Σχόλια">
+Γράψτε κάτι...
+</textarea><br />
+<input type="submit" value="Προσθήκη" />
+</form>
+<br /><br />
+<br /><br />
+
+
+
+<p>Ανεβάστε φωτογραφίες σχετικά με το πρόβλημά σας:</p>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+Αρχείο: <input type="file" name="filename" />
+<input type="submit" value="Φόρτωση" />
+</form>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+Αρχείο: <input type="file" name="filename" />
+<input type="submit" value="Φόρτωση" />
+</form>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+Αρχείο: <input type="file" name="filename" />
+<input type="submit" value="Φόρτωση" />
+</form>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+Αρχείο: <input type="file" name="filename" />
+<input type="submit" value="Φόρτωση" />
+</form>
+
+<br /><br />
+<br />
+
+
+
+
+
+
+</body>
