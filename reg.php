@@ -15,6 +15,9 @@
 	if (!mysqli_query($link,$sql)) {
   die('Error: ' . mysqli_error($link));
 }
+header('Location: http://localhost/web_2014/index.php');
 echo "1 record added";
         mysqli_close($link);
 ?>
+
+
