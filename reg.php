@@ -19,5 +19,3 @@ header('Location: http://localhost/web_2014/index.php');
 echo "1 record added";
         mysqli_close($link);
 ?>
-
-
