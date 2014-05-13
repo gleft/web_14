@@ -5,22 +5,15 @@ if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT * FROM users");
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+$sql="SELECT * FROM $users WHERE email='$email' AND password='$password'"
+$result=mysqli_query($sql);
+$count=mysql_num_rows($result);
+if($count==1)
+	{header("egkegr.html");}
 
-echo "<table border='1'>
-<tr>
-<th>email</th>
-<th>password</th>
-</tr>";
 
-while($row = mysqli_fetch_array($result)) {
-  echo "<tr>";
-  echo "<td>" . $row['email'] . "</td>";
-  echo "<td>" . $row['password'] . "</td>";
-  echo "</tr>";
-}
-
-echo "</table>";
 
 mysqli_close($con);
 ?>
