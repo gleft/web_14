@@ -7,11 +7,10 @@ if (mysqli_connect_errno()) {
 
 	$email = $_POST['email'];
 	$password = $_POST['password'];
-$sql="SELECT * FROM $users WHERE email='$email' AND password='$password'"
-$result=mysqli_query($sql);
-$count=mysql_num_rows($result);
+$result = mysqli_query($con,"SELECT * FROM users where password='$password' and email='$email'");
+$count = mysqli_num_rows($result);
 if($count==1)
-	{header("egkegr.html");}
+	header('Location: http://localhost/web_2014/egkegr.html');
 
 
 
