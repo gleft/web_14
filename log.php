@@ -5,12 +5,22 @@ if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT * FROM Persons");
+$result = mysqli_query($con,"SELECT * FROM users");
+
+echo "<table border='1'>
+<tr>
+<th>email</th>
+<th>password</th>
+</tr>";
 
 while($row = mysqli_fetch_array($result)) {
-  echo $row['FirstName'] . " " . $row['LastName'];
-  echo "<br>";
+  echo "<tr>";
+  echo "<td>" . $row['email'] . "</td>";
+  echo "<td>" . $row['password'] . "</td>";
+  echo "</tr>";
 }
+
+echo "</table>";
 
 mysqli_close($con);
 ?>
