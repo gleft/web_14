@@ -11,7 +11,7 @@
 	$sxolia = $_POST['sxolia'];
 	$email =  $_SESSION['email'];
 	$latlon = $_POST['latlon'];
-	$sql="INSERT INTO reports (title, latlon, photo, sxolia, wra, imerom, renum, email) VALUES ('$title', '$sxolia', '$email', '$latlon')";
+	$sql="INSERT INTO reports (title, sxolia, email, latlon) VALUES ('$title', '$sxolia', '$email', '$latlon')";
 	if (!mysqli_query($link,$sql)) {
   die('Error: ' . mysqli_error($link));
 }
