@@ -17,7 +17,8 @@ echo var_dump($result);
 if($count==1){
 	echo "<h2>Your Input:</h2>"; 
 	$_SESSION['email']=$email;
-	header('Location: egkegr.php');
+	var_dump($_SESSION);
+	//header('Location: egkegr.php');
 }
 
 else {session_destroy();

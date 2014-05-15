@@ -7,8 +7,8 @@
 	}
         //mysql_select_db($db_server["dimos"]) or die(mysql_error());
         //mysql_query("SET CHARACTER SET greek", $link);
-	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$title = $_POST['option'];
+	$sxolia = $_POST['sxolia'];
 	$name =  $_POST['name'];
 	$phone = $_POST['phone'];
 	$sql="INSERT INTO users (email, password, name, phone) VALUES ('$email', '$password', '$name', '$phone')";

@@ -7,7 +7,7 @@
 <form name="input" action="log.php" method="post" >
 Username: <input type="text" name="email" size="30">
 Password: <input type="password" name="password" size="30">
-<p style="text-align:center"><input type="submit" name="submit" value="Είσοδος"></p>
+<p style="text-align:center"><input type="submit"  value="Είσοδος"></p>
 </form>
 <ul>
       <li><a href="index.php">Αρχική</a></li>
