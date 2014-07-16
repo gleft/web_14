@@ -10,20 +10,14 @@ if (mysqli_connect_errno()) {
 echo var_dump($_POST);
 if (isset($_POST['submit'])) {
 	$email = $_POST['email'];
-	$password = $_POST['password'];
-$result = mysqli_query($con,"SELECT * FROM users where password='$password' and email='$email'");
+	
+$result = mysqli_query($con,"SELECT * FROM users where email='$email'");
 $count = mysqli_num_rows($result);
 echo var_dump($result);
 if($count==1){
+    $result = mysqli_query($con,"DELETE FROM users where email='$email'");
 	
-	if($email=="admin@admin") {
-          header('Location: admin.php');
-        }
-	else { 
-          echo "<h2>Your Input:</h2>"; 
-	  $_SESSION['email']=$email;
-	  header('Location: egkegr.php');
-	}
+
 }
 
 else {session_destroy();

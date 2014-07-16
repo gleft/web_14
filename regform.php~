@@ -28,7 +28,7 @@ function test_input($data) {
 }
 ?>
 
-<form action="reg.php" method="post">
+<form action="dummyreg.php" method="post">
 <table>
 <tr>
 <td><label>Email:</label></td> <td><input type="email" placeholder="Γράψτε το email σας" name="email"size="30"></td>
