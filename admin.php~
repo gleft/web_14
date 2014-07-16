@@ -163,8 +163,4 @@ while($row = mysqli_fetch_array($result)) {
 
 echo "</table>";
 ?>
-<form name="input" action="delr.php" method="post" >
-Enter user's email to delete report: <input type="text" name="email" size="30">
-<p style="text-align:center"><input type="submit" name="submit" value="Delete"></p>
-</form>
 </body>

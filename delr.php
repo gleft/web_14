@@ -11,11 +11,11 @@ echo var_dump($_POST);
 if (isset($_POST['submit'])) {
 	$email = $_POST['email'];
 	
-$result = mysqli_query($con,"SELECT * FROM users where email='$email'");
+$result = mysqli_query($con,"SELECT * FROM reports where email='$email'");
 $count = mysqli_num_rows($result);
 echo var_dump($result);
 if($count==1){
-    $result = mysqli_query($con,"DELETE FROM users where email='$email'");
+    $result = mysqli_query($con,"DELETE FROM reports where email='$email'");
 	header('location: admin.php');
 
 }

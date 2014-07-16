@@ -1,5 +1,5 @@
 body{
-	background:url(http://www.designbolts.com/wp-content/uploads/2012/11/Awesome-Gun-metal-Black-Pattern-for-background.jpg);
+	background: url("http://www.designbolts.com/wp-content/uploads/2012/11/Awesome-Gun-metal-Black-Pattern-for-background.jpg");
 	
 	background-size: tile;	
 	color:white;
@@ -48,3 +48,9 @@ footer{
 	background: rgba(255,255.255,0.1);
 	color:blue;
 	text-align:right;}
+table{
+	text-align:left;
+	margin:0 auto;
+	padding: 30px 50px 0px 50px;
+	}
+	
