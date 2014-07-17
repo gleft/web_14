@@ -117,7 +117,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <br /><br /><br />
 <br /><br />
 
-<form action="rep.php" method="post">
+<!--<form action="rep.php" method="post">
 <p>Επιλέξτε την κατηγορία αναφοράς που θα κάνετε:</p>
 <select name="option">
 <option value ="noise">Ηχορύπανση</option>
@@ -130,7 +130,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <br /><br />
 Σχόλια σχετικά με την αναφορά σας:<br /><br />
-<div id="map-canvas" style="width:800px;height:400px;"></div>
+<div id="map-canvas" style="margin:30px 250px 80px 250px;padding: 500px 50px 30px 50px;"></div>
 
 <br><textarea name="sxolia" id="Σχόλια">
 Γράψτε κάτι...
@@ -140,26 +140,35 @@ google.maps.event.addDomListener(window, 'load', initialize);
 Τοποθεσια: <input type="float" name="latlon"><br>
 
 <input type="submit" value="Προσθήκη" /><br>
-</form>
+</form>-->
 <br /><br />
 <br /><br />
 
 <p>Ανεβάστε φωτογραφίες σχετικά με το πρόβλημά σας:</p>
-<form action="upload.php" method="post" enctype="multipart/form-data">
-Αρχείο: <input type="file" name="filename" />
-<input type="submit" value="Φόρτωση" />
-</form>
-<form action="upload.php" method="post" enctype="multipart/form-data">
-Αρχείο: <input type="file" name="filename" />
-<input type="submit" value="Φόρτωση" />
-</form>
-<form action="upload.php" method="post" enctype="multipart/form-data">
-Αρχείο: <input type="file" name="filename" />
-<input type="submit" value="Φόρτωση" />
-</form>
-<form action="upload.php" method="post" enctype="multipart/form-data">
-Αρχείο: <input type="file" name="filename" />
-<input type="submit" value="Φόρτωση" />
+<form action="upload_photo.php" method="post" enctype="multipart/form-data">
+<label for="file">Filename:</label>
+Αρχείο: <input type="file" name="file" id="file"><br>
+	<p>Επιλέξτε την κατηγορία αναφοράς που θα κάνετε:</p>
+<select name="option">
+<option value ="noise">Ηχορύπανση</option>
+<option value ="clean">Καθαριότητα</option>
+<option value ="roads">Δρόμοι</option>
+<option value ="security" selected>Έλειψη φύλαξης</option>
+<option value ="shops">Έλειψη καταστημάτων</option>
+<option value ="pt">Μέσα μαζικής μεταφοράς</option>
+</select>
+
+<br /><br />
+Σχόλια σχετικά με την αναφορά σας:<br /><br />
+<div id="map-canvas" style="margin:30px 250px 80px 250px;padding: 500px 50px 30px 50px;"></div>
+
+<br><textarea name="sxolia" id="Σχόλια">
+Γράψτε κάτι...
+</textarea><br />
+
+
+Τοποθεσια: <input type="float" name="latlon"><br>
+<input type="submit" name="submit" value="Φόρτωση">
 </form>
 <br /><br />
 <br />
