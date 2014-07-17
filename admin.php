@@ -102,8 +102,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
 </head>
+<h1>!ADMIN!</h1>
 <body>
-<div id="map-canvas" style="width:800px;height:400px;"></div>
+<div id="map-canvas" style="margin:30px 250px 80px 250px;padding: 500px 50px 30px 50px;"></div>
 <?php
 $con=mysqli_connect("localhost","root","","dimos") or die(mysql_error());
 if (mysqli_connect_errno()) {
@@ -144,10 +145,11 @@ $result = mysqli_query($con,"SELECT * FROM reports");
 
 echo "<table border='1'>
 <tr>
-<th>name</th>
-<th>emai</th>
-<th>phone</th>
-<th>password</th>
+<th>title</th>
+<th>sxolia</th>
+<th>email</th>
+<th>latlon</th>
+<th>path</th>
 <th>id</th>
 </tr>";
 
@@ -157,6 +159,7 @@ while($row = mysqli_fetch_array($result)) {
   echo "<td>" . $row['sxolia'] . "</td>";
   echo "<td>" . $row['email'] . "</td>";
   echo "<td>" . $row['latlon'] . "</td>";
+  echo "<td>" . $row['path'] . "</td>";
   echo "<td>" . $row['id'] . "</td>";
   echo "</tr>";
 }
@@ -167,4 +170,10 @@ echo "</table>";
 Enter user's email to delete report: <input type="text" name="email" size="30">
 <p style="text-align:center"><input type="submit" name="submit" value="Delete"></p>
 </form>
+<ul>
+      <li><a href="index.php">Αρχική</a></li>
+</ul>
+<footer>
+  <p>by GPtuning</p>
+</footer>
 </body>
