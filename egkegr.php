@@ -146,8 +146,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <p>Ανεβάστε φωτογραφίες σχετικά με το πρόβλημά σας:</p>
 <form action="upload_photo.php" method="post" enctype="multipart/form-data">
-<label for="file">Filename:</label>
-Αρχείο: <input type="file" name="file" id="file"><br>
+<label for="file">Αρχείο:</label>
+ <input type="file" name="file" id="file"><br>
 	<p>Επιλέξτε την κατηγορία αναφοράς που θα κάνετε:</p>
 <select name="option">
 <option value ="noise">Ηχορύπανση</option>
