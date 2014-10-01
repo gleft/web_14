@@ -1,0 +1,21 @@
+CREATE DATABASE dimos;
+
+create table reports
+(
+title varchar(255),
+sxolia varchar(255),
+email varchar(255),
+latlon varchar(255),
+path varchar(255),
+id int(11) NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (id)
+)
+
+
+create table users
+(
+email varchar(255),
+password varchar(255),
+name varchar(255),
+phone int(11)
+)
