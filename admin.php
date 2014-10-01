@@ -124,7 +124,7 @@ while($row = mysqli_fetch_array($result)) {
   echo "<tr>";
   echo "<td>" . $row['name'] . "</td>";
   echo "<td>" . $row['email'] . "</td>";
-echo "<td>" . $row['phone'] . "</td>";
+  echo "<td>" . $row['phone'] . "</td>";
   echo "<td>" . $row['password'] . "</td>";
   echo "</tr>";
 }
@@ -167,7 +167,7 @@ while($row = mysqli_fetch_array($result)) {
 echo "</table>";
 ?>
 <form name="input" action="delr.php" method="post" >
-Enter user's email to delete report: <input type="text" name="email" size="30">
+Enter report's id to delete report: <input type="int" name="id" size="11">
 <p style="text-align:center"><input type="submit" name="submit" value="Delete"></p>
 </form>
 <ul>
