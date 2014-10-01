@@ -9,13 +9,13 @@ if (mysqli_connect_errno()) {
 
 echo var_dump($_POST);
 if (isset($_POST['submit'])) {
-	$email = $_POST['email'];
+	$id = $_POST['id'];
 	
-$result = mysqli_query($con,"SELECT * FROM reports where email='$email'");
+$result = mysqli_query($con,"SELECT * FROM reports where id='$id'");
 $count = mysqli_num_rows($result);
-echo var_dump($result);
+//echo var_dump($result);
 if($count==1){
-    $result = mysqli_query($con,"DELETE FROM reports where email='$email'");
+    $result = mysqli_query($con,"DELETE FROM reports where id='$id'");
 	header('location: admin.php');
 
 }
